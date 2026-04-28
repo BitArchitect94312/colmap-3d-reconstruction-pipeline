@@ -53,17 +53,6 @@ The Colmap pipeline was in bash file "colmap_pipeline.sh"
 
 
 
-## Pre_processing of image data
-
-This repo was desinged to build a 3D model from images, if users want a single object reconstrcution without background inforamtion,
-
-please use one of our another workflow and docker container [3d_sorghum_segmentation ](https://github.com/BitArchitect94312/3d_sorghum_segmentation)  to perform pre-processing of image data, for example, segment the foreground object from background.
-
-Then with the sgmentation results, users can build a 3D point cloud model without background inforamtion, the result 3D model might has a small portition of noise, which can be cleaned automatically by our [model_clean_3D module](https://github.com/BitArchitect94312/3D_Sorghum_phenotyping_pipeline/blob/main/model_clean_3D.py).
-
-
-
-
 ## Singularity
 
 Open a shell in your current working directory:
