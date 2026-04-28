@@ -57,9 +57,9 @@ The Colmap pipeline was in bash file "colmap_pipeline.sh"
 
 This repo was desinged to build a 3D model from images, if users want a single object reconstrcution without background inforamtion,
 
-please use one of our another workflow and docker container [3d_sorghum_segmentation ](https://github.com/Computational-Plant-Science/3d_sorghum_segmentation)  to perform pre-processing of image data, for example, segment the foreground object from background.
+please use one of our another workflow and docker container [3d_sorghum_segmentation ](https://github.com/BitArchitect94312/3d_sorghum_segmentation)  to perform pre-processing of image data, for example, segment the foreground object from background.
 
-Then with the sgmentation results, users can build a 3D point cloud model without background inforamtion, the result 3D model might has a small portition of noise, which can be cleaned automatically by our [model_clean_3D module](https://github.com/Computational-Plant-Science/3D_Sorghum_phenotyping_pipeline/blob/main/model_clean_3D.py).
+Then with the sgmentation results, users can build a 3D point cloud model without background inforamtion, the result 3D model might has a small portition of noise, which can be cleaned automatically by our [model_clean_3D module](https://github.com/BitArchitect94312/3D_Sorghum_phenotyping_pipeline/blob/main/model_clean_3D.py).
 
 
 
@@ -128,34 +128,6 @@ Author: Johannes L. Schoenberger (jsch-at-demuc-dot-de)
     booktitle={European Conference on Computer Vision (ECCV)},
     year={2016},
 }
-### OUR COLMAP ROOT PHENOTYPING PAPER
-@article{Liu2023,
-author = {Liu, Suxing and Bonelli, Wesley Paul and Pietrzyk, Peter and Bucksch, Alexander},
-title = {Comparison of open-source three-dimensional reconstruction pipelines for maize-root phenotyping},
-journal = {The Plant Phenome Journal},
-volume = {6},
-number = {1},
-pages = {e20068},
-doi = {https://doi.org/10.1002/ppj2.20068},
-year = {2023},
-}
-
-# Author
-Suxing Liu (suxingliu@gmail.com)
-
-# License
-GNU Public License
-
-# Docker recipe 
-
-This docker recipe was developed based on [COLMAP official documents](https://github.com/colmap/colmap/tree/main/docker)
-
-and [COLMAP setup](https://colmap.github.io/faq.html) 
-
-and [UA HPC GPUs](https://hpcdocs.hpc.arizona.edu/running_jobs/batch_jobs/batch_directives/#gpus)
-
-and [NVIDIA Developer Program, GPU Compute Capability](https://developer.nvidia.com/cuda-gpus)
-
 
 # Note: 
 
